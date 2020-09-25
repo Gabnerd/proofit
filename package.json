@@ -9,6 +9,10 @@
   "keywords": [
     "prova"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Gabnerd/proofit.git/"
+  },  
   "author": "Gabnerd",
   "license": "ISC",
   "dependencies": {
