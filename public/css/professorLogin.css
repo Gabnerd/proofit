@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: 'Courgette-Regular';
+    src: url('/fonts/Courgette-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Frederick-Regular';
+    src: url('/fonts/FrederickatheGreat-Regular.ttf')
+}
+
+.loginBackground{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/img/background-login-professor.jpg');
+}
+
+.loginPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff55;
+}
+
+.formulario-login {
+    border: 1px solid #00000044;
+    border-radius: 0.5rem;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffffb4;
+}
+
+.campo-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.campo-formulario + .campo-formulario{
+    margin-top: 5px;
+}
+
+.campo-formulario>label {
+    font-family: 'Courgette-Regular';
+    font-size: 2rem;
+}
+
+.campo-formulario>input {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    font-family: 'Frederick-Regular';
+    border: 1px solid #00000044;
+    border-radius: 0.6rem;
+}
+
+.button{
+    margin-top: 8px;
+    font-family:"CabinSketch-Regular";
+    font-size: 1.9rem;
+    height: 2.5rem;
+    width: 8rem;
+}
+
+.button:hover{
+    font-family: 'Frederick-Regular';
+}

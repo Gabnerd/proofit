@@ -2,20 +2,26 @@
   "name": "proofit",
   "version": "1.0.0",
   "description": "site para gerenciamento de provas",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "startdev": "nodemon app.js",
+    "knex:migrate": "knex --knexfile knexfile.js migrate:latest",
+    "knex:migrate:rollback": "knex --knexfile knexfile.js migrate:rollback"
   },
   "keywords": [
     "prova"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Gabnerd/proofit.git/"
-  },  
+    "type": "git",
+    "url": "https://github.com/Gabnerd/proofit.git"
+  },
   "author": "Gabnerd",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.6",
+    "sqlite3": "^5.0.0"
   }
 }
